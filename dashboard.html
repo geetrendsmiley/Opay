@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08a66a">
+  <title>MyBank — Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-page">
+  <header class="topbar">
+    <div class="profile">
+      <div class="avatar">E</div>
+      <div>
+        <span class="muted">Hi,</span>
+        <strong>Esther</strong>
+      </div>
+    </div>
+    <div class="top-actions">
+      <button aria-label="Help">♡</button>
+      <button aria-label="Scan">⌗</button>
+      <button aria-label="Notifications">♧</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="balance-card">
+      <div class="balance-head">
+        <span>✓ &nbsp; Available Balance</span>
+        <button id="toggleBalance" aria-label="Show or hide balance">◉</button>
+      </div>
+      <div class="balance-row">
+        <h2 id="balance">₦9,999,880.00</h2>
+        <button class="add-money">+ Add Money</button>
+      </div>
+      <div class="transaction-link">Transaction History ›</div>
+    </section>
+
+    <section class="transactions">
+      <article class="transaction">
+        <div class="transaction-icon down">↓</div>
+        <div class="transaction-info">
+          <strong>Transfer Reversal</strong>
+          <span>From: ZACCHEAUS OLAIYA</span>
+          <small>Yesterday, Sep 30, 2026, 9:10 PM</small>
+        </div>
+        <div class="transaction-amount positive">+₦5,000,000.00</div>
+        <span class="status">Reversed</span>
+      </article>
+
+      <article class="transaction">
+        <div class="transaction-icon pink">▣</div>
+        <div class="transaction-info">
+          <strong>SafeBox Deposit</strong>
+          <small>Sep 30th, 2026, 2:22:35 PM</small>
+        </div>
+        <div class="transaction-amount">₦2,000.00</div>
+        <span class="status">Successful</span>
+      </article>
+    </section>
+
+    <section class="quick-actions">
+      <button><span>♟</span><b>To MyBank</b></button>
+      <button><span>▥</span><b>To Bank</b></button>
+      <button><span>↗</span><b>Withdraw</b></button>
+    </section>
+
+    <section class="services">
+      <button><span>▥</span><b>Airtime</b></button>
+      <button><span>↕</span><b>Data</b></button>
+      <button><span>◉</span><b>Betting</b></button>
+      <button><span>▶</span><b>TV</b></button>
+      <button><span>▣</span><b>SafeBox</b></button>
+      <button><span>₦</span><b>Loan</b></button>
+      <button><span>⚑</span><b>Invitation</b></button>
+      <button><span>+</span><b>More</b></button>
+    </section>
+
+    <section class="promo">
+      <div class="promo-image">👥</div>
+      <div>
+        <strong>Share MyBank with Others</strong>
+        <p>Help a loved one get their own account in minutes</p>
+      </div>
+      <button>Go</button>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="active">◉<span>Home</span></button>
+    <button>♡<span>Rewards</span></button>
+    <button>⌁<span>Finance</span></button>
+    <button>▭<span>Cards</span></button>
+    <button id="logoutBtn">−<span>Me</span></button>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
